@@ -1,0 +1,40 @@
+/**
+ * HW 1
+ **/
+
+
+ .header{
+
+ }
+.name{
+background: blue;
+
+}
+.nav{
+
+}
+.id{
+
+}
+.about{
+
+}
+.line{
+
+}
+.main{
+
+}
+.copyright{
+
+}
+
+
+/* clearfix is applied to the parent container to 'fix' the flow of the page */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
