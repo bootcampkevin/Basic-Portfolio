@@ -2,33 +2,155 @@
  * HW 1
  **/
 
+/**
+   * Teal color (used for headings and backgrounds): `#4aaaa5`
+   * Regular font color (used for paragraphs and all text besides the headings): `#777777`
+   * Main header background color: `#ffffff`
+   * Main header border color: `#cccccc`
+   * Footer background color: `#666666`
+   * Main content background color: `#ffffff`
+   * Main content border color: `#dddddd`
+ **/
 
- .header{
-
- }
-.name{
-background: blue;
-
-}
-.nav{
-
-}
-.id{
-
-}
-.about{
-
-}
-.line{
-
-}
-.main{
-
-}
-.copyright{
-
+body {
+  background-image: url("../images/bg.png");
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #777777;
 }
 
+.header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #ffffff;
+  /* margin: 0 auto; */
+  /* height:100px; */
+  border-bottom: 1px solid #cccccc;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.headcontent{
+  width: 760px; /*****vchange to 960px ****/
+  margin: 0 auto;  
+  /* border: 1px solid green; */
+  /* height: auto; */
+  
+  
+}
+.name {
+  background: #4aaaa5;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 200px;
+  height: 100%;
+  /* text-align: center; */
+  margin: 0px; /****if this isn't in here, the bg for name doesn't fill top tp bottom****/
+  padding: 0 25px;
+  float: left;
+  color: #ffffff;
+  
+  line-height: 65px; 
+  /****hacked this to aling text in center.****/
+  
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* display: inline; */
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: blueviolet;
+  /* height: 100%; */
+}
+
+.nav li {
+  float: right;
+  background-color: #ffffff;  
+}
+
+.nav li a {
+  display: inline-block;/*conflicts if in li with the float?*/
+  color: #777777;
+  text-align: center;
+  padding: 25px 10px; /***** 15.5px hacked, why can't I fill full top to bottom? ****/
+  text-decoration: none;
+  
+  /* height: 100%; */
+}
+
+.nav li a:hover {
+  background-color: #eeeeee;
+  color: #4aaaa5;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #4aaaa5;
+  color: #ffffff;
+}
+
+.content {
+  width: 760px; /*****change to 960px ****/
+  margin: 25px auto 50px auto;
+  padding: 0; 
+  /* border: 1px solid purple; */
+  background-color: #ffffff;
+  overflow: auto;/****??***/
+}
+
+.about {
+  /* margin: 0 auto; */
+  padding: 25px;
+  /* border: 1px solid green; */
+  /* float: left; */
+}
+
+
+
+h1{
+  color: #4aaaa5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+}
+.hidden {
+  display: none;
+}
+
+.line {
+  border: 1px solid #777777;
+}
+
+.main {
+  width: 100%;
+  overflow: auto;
+  clear: both;
+  color: #777777;
+  
+  /* background: #394549; */
+  /* border: 1px solid orangered; */
+  padding-top: 25px;
+}
+.main img {
+  float:left;
+  padding: 0 25px 25px 0;
+}
+.copyright {
+  border-top: 5px solid #4aaaa5;
+  /* margin: 0 auto; */
+  text-align: center;
+  color: #cccccc;
+  padding: 25px 0 8px 0;
+  background-color: #666666;
+  font-size: .7em;
+  
+}
 
 /* clearfix is applied to the parent container to 'fix' the flow of the page */
 
@@ -38,3 +160,62 @@ background: blue;
   clear: both;
 }
 
+
+#name, #email{
+  width: 97%; 
+  padding: 8px;
+  border: 1px solid #ccc; 
+  margin-top: 6px; 
+  margin-bottom: 6px;
+  margin-right: 0;
+}
+
+#message{
+  width: 97%;
+  height: 150px;  
+  padding: 8px;
+  border: 1px solid #ccc; 
+  margin-top: 6px; 
+  margin-bottom: 6px;
+  margin-right: 0;
+    
+} 
+
+.button{
+  background-color: #4aaaa5;
+  height: 25px;
+  /* width: 50px;
+  padding: 10px; */
+  color: #ffffff;
+  
+}
+
+.portfolio img {
+  vertical-align: middle;
+  /* border-style: none; */
+}
+
+.portfolio {
+  /* position: relative;   */
+  /* background: darkgray; */
+  width: 33.3%;
+
+} 
+
+.title {
+  float: left;
+  width: 249px;
+  height: 40px;
+  padding: 15px 0 0 0;
+  /* margin-left: 30px; */
+  /* text-decoration-color: white; */
+  color: white;
+  background: #4aaaa5;
+  /* border: 1px solid #eee; */
+  position: relative;
+  z-index: 9;
+  top:-95px;
+  /* left: -30px; */
+  margin: 0 auto;
+  text-align: center;
+}
