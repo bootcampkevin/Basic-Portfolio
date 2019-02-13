@@ -21,23 +21,17 @@ body {
 }
 
 .header {
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
   background-color: #ffffff;
-  /* margin: 0 auto; */
-  /* height:100px; */
   border-bottom: 2px solid #cccccc;
   margin: 0;
   padding: 0;
   height: auto;
 }
 .headcontent{
-  width: 960px; /*****vchange to 960px ****/
+  width: 960px; 
   margin: 0 auto;  
-  /* border: 1px solid green; */
-  /* height: auto; */
-  
-  
 }
+
 .name {
   font-family: Georgia, "Times New Roman", Times, serif;
   background: #4aaaa5;
@@ -45,12 +39,10 @@ body {
   font-size: 1.5em;
   width: 200px;
   height: 69px;
-  /* text-align: center; */
-  margin: 0px; /****if this isn't in here, the bg for name doesn't fill top tp bottom****/
+  margin: 0px; 
   padding: 0 25px;
   float: left;
   color: #ffffff;
-  
   line-height: 65px; 
   /****hacked this to aling text in center.****/
   
@@ -68,8 +60,6 @@ body {
   margin: 0 0 0 0;
   padding: 0px;
   overflow: hidden;
-  /* background-color: blueviolet; */
-  /* height: 100%; */
 }
 
 .nav li {
@@ -78,13 +68,11 @@ body {
 }
 
 .nav li a {
-  display: inline-block;/*conflicts if in li with the float?*/
+  display: inline-block;
   color: #777777;
   text-align: center;
-  padding: 25px 10px; /***** 15.5px hacked, why can't I fill full top to bottom? ****/
-  text-decoration: none;
-  
-  /* height: 100%; */
+  padding: 25px 10px;
+  text-decoration: none;  
 }
 
 .nav li a:hover {
@@ -98,20 +86,17 @@ body {
 }
 
 .content {
-  width: 960px; /*****change to 960px ****/
+  width: 960px; 
   margin: 25px auto 150px auto;
   padding: 0; 
-  /* border: 1px solid purple; */
   background-color: #ffffff;
-  overflow: auto;/****??***/
+  overflow: auto;
   
 }
 
 .about {
-  /* margin: 0 auto; */
   padding: 25px;
   border: 1px solid #cccccc;
-  /* float: left; */
 }
 
 
@@ -135,9 +120,6 @@ h1{
   overflow: auto;
   clear: both;
   color: #777777;
-  
-  /* background: #394549; */
-  /* border: 1px solid orangered; */
   padding-top: 25px;
 }
 .main img {
@@ -146,7 +128,6 @@ h1{
 }
 .footer {
   border-top: 5px solid #4aaaa5;
-  /* margin: 0 auto; */
   text-align: center;
   color: #cccccc;
   padding: 25px 0 8px 0;
@@ -159,14 +140,13 @@ h1{
   
   height: 50px;
 }
-/* clearfix is applied to the parent container to 'fix' the flow of the page */
 
+/* clearfix is applied to the parent container to 'fix' the flow of the page */
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
-
 
 #name, #email{
   width: 97%; 
@@ -186,28 +166,22 @@ h1{
   margin-bottom: 6px;
   margin-right: 0;
   overflow: scroll;
-    
 } 
 
 .button{
   background-color: #4aaaa5;
   height: 30px;
   width: 70px;
-  /* padding: 10px;  */
   color: #ffffff;
   
 }
 
 .portfolio img {
   vertical-align: middle;
-  /* border-style: none; */
 }
 
 .portfolio {
-  /* position: relative;   */
-  /* background: darkgray; */
   width: 33.3%;
-
 } 
 
 .title {
@@ -215,15 +189,11 @@ h1{
   width: 250px;
   height: 40px;
   padding: 18px 0 0 0;
-  /* margin-left: 30px; */
-  /* text-decoration-color: white; */
   color: white;
   background: #4aaaa5;
-  /* border: 1px solid #eee; */
   position: relative;
   z-index: 9;
   top:-95px;
-  /* left: -30px; */
   margin: 0 auto;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
