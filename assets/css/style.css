@@ -18,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   color: #777777;
+  position: relative;
 }
 
 .header {
@@ -133,12 +134,12 @@ h1{
   padding: 25px 0 8px 0;
   background-color: #666666;
   font-size: .7em;  
-  
-
+  position: absolute;
+  width: 100%;
 }
 .push{
   
-  height: 50px;
+  /* height: 50px; */
 }
 
 /* clearfix is applied to the parent container to 'fix' the flow of the page */
